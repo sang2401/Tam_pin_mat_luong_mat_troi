@@ -1,0 +1,8 @@
+SOLAR TRACKER 2 TRỤC - LUỒNG HOẠT ĐỘNG
+
+1. Khởi động: 2 servo về 90°, Serial 9600.
+2. Mỗi vòng lặp đọc 4 cảm biến A1-A4 (0-1023, càng sáng càng cao).
+3. Cả 4 > 200 -> đứng yên.
+4. A1,A2 sáng nhất -> servo dọc +2° | A3,A4 sáng nhất -> servo dọc -2°
+5. A1,A3 sáng nhất -> servo ngang +2° | A4,A2 sáng nhất -> servo ngang +2°
+6. Chờ 50ms rồi lặp lại. Góc servo giới hạn 0-180°.
